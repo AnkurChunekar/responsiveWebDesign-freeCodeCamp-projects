@@ -7,30 +7,53 @@
     <title>Ankur's FreeCodeCamp Projects</title>
 
     <style>
+        
+
         body {
             font-family: monospace;
         }
         header {
             text-align: center;
         }
+        h1 {
+            font-size: 2.5rem;
+            margin: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+    max-width: 80%;
+    margin: auto;
+    text-align: justify;
+    font-family: sans-serif;
+        }
         .flex-container {
             display: flex;
-
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
         }       
+        
         .flex-item {
             max-width: 330px;
             border: solid 2px black;
-            background-color: #d1d5db;
             padding: 0.5rem;
-            margin: 1rem;
-            /* color: white; */
+            margin: 2rem;
+            font-family: sans-serif;
+            background: linear-gradient(45deg, #ffd5da, #bfe9ff);
+        }
+        section {
+            margin-top: 2rem;
         }
         .project-image {
             max-width: 330px;
         }
         a {
-            text-decoration: none;
             color: black;
+            text-decoration: none;
+        }
+        #project-name {
+            text-align: center;
+            font-weight: bolder;
         }
     </style>
 </head>
@@ -39,8 +62,8 @@
 
     <main>
     <header>
-<h1>Ankur's FreeCodeCamp Projects</h1>
-<p>Welcome this page hosts all of my projects I have made for successfull completion of freeCodeCamp's Responsive Web Design course.</p>
+<h1>Ankur's FreeCodeCamp Projects.</h1>
+<p>Welcome, This page hosts all of my projects I have made for successfull completion of freeCodeCamp's Responsive Web Design course.</p>
 </header>
 
 <section>
@@ -48,17 +71,16 @@
 <div class="flex-item">
     <a href="https://codepen.io/ankurchunekar/full/qBPXpbZ" target="_blank">
 <img class="project-image" src="images/tribute-page-img.png" alt="screenshot of my tribute page project">
-<p>Tribute Page Project. (Responsive)</p>
+<p id="project-name">Tribute Page Project. </p>
 </a>
 </div>
 
-<div class="flex-container">
+<!-- <div class="flex-container">
     <div class="flex-item">
     <img class="project-image" src="images/tribute-page-img.png" alt="screenshot of my tribute page project">
     <p>Tribute Page Project. (Responsive)</p>
     </div>
-</div>
-
+</div> -->
 
 </section>
 
