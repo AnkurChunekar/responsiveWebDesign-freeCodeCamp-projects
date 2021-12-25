@@ -7,15 +7,73 @@
     <title>Sports Survey Form</title>
 </head>
 <body>
-<header>
-
-
-</header>
-
-<section>
-
-
-</section>
+    <header>
+        <h1 id="title">Sports Survey</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+      </header>
+      <section>
+        <form id="survey-form">
+          <div id="form-head">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" placeholder="please enter your name" id="name" required />
+      
+            <label id="email-label" for="email">Email</label>
+            <input type="email" placeholder="please enter your email" id="email" required />
+      
+            <label id="number-label" for="number">AGE (optional)</label>
+            <input type="number" placeholder="please enter your age" id="number" min="5" max="100" required />
+      
+            <label for="dropdown">Which of the following is your favorite game?</label>
+            <select id="dropdown">
+              <option>Football</option>
+              <option>Cricket</option>
+              <option>Basketball</option>
+              <option>Badminton</option>
+              <option>kabaddi</option>
+              <option>Table Tennis</option>
+              <option>Chess</option>
+              <option>Other</option>
+            </select>
+      
+          </div>
+      
+          <div id="recommendation-box">
+            <label for="radio-btn" class="block-display">If given a choice would you try playing a different game?</label>
+            <div>
+              <input type="radio" id="radio-btn" name="recommend" value="Definitely" />
+              <label for="radio-btn">Definitely</label>
+            </div>
+            <div>
+              <input type="radio" id="radio-btn1" name="recommend" value="Maybe" />
+              <label for="radio-btn1">Maybe</label>
+            </div>
+            <div>
+              <input type="radio" id="radio-btn2" name="recommend" value="Not Sure" />
+              <label for="radio-btn2">No</label>
+            </div>
+          </div>
+      
+          <label class="block-display">Which type of game do you usually love playing? (Check all that apply)</label>
+          <div>
+            <input id="frontend" type="checkbox" value="frontend-projects"> <label for="frontend">Indoor</label>
+          </div>
+          <div>
+            <input id="backend" type="checkbox" value="backend-projects"> <label for="backend">Outdoor</label>
+          </div>
+      
+          <div>
+            <input id="data-visualization" type="checkbox" value="data-visualization"> <label for="data-visualization">Video Games</label>
+          </div>
+      
+          <div id="suggestion-box">
+            <label for="feedback" class="block-display">Have any feedback on how we can improve?</label>
+            <textarea id="feedback" placeholder="please write your suggestions here" class="block-display"></textarea>
+          </div>
+      
+          <button id="submit" type="submit" class="block-display">Submit</button>
+        </form>
+      
+      </section>
 
 </body>
 </html>
