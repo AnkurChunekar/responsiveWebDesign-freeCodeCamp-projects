@@ -7,7 +7,140 @@
     <title>Product Landing Page</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    
+
+<style>
+body {
+  margin: 2rem auto;
+  padding: 0;
+  background-color: #fef3c7;
+}
+
+.fixed-to-top {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #ffdd55;
+}
+
+#header-img {
+  max-width: 25vw;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-item nav {
+  margin-right: 1rem;
+}
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.1rem;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+#product-hero {
+  text-align: center;
+  margin: 4rem 0;
+  padding-top: 1rem;
+}
+
+#product-hero input {
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+}
+#product-hero #submit {
+  border: none;
+  border-radius: 0.2rem;
+  color: white;
+  background-color: #064e3b;
+  cursor: pointer;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  place-items: center;
+  max-width: 650px;
+  margin: auto;
+}
+.grid-item {
+  /*   border: solid 1px red; */
+}
+i {
+  color: #064e3b;
+}
+#how-it-works {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+@media (max-width: 650px) {
+  #video {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/* section pricing ------------ */
+#pricing {
+  padding: 1rem 0;
+}
+
+#pricing .flex-container {
+  justify-content: space-evenly;
+}
+.price-box {
+  text-align: center;
+  max-width: 300px;
+  border: solid 1px black;
+  margin: 1rem;
+}
+.price-box h3 {
+  background-color: #10b981;
+  color: white;
+  padding: 1rem;
+  margin: 0;
+}
+.price-box p {
+  margin: 1rem;
+}
+.price-box button {
+  margin: 1rem 0;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  color: white;
+  background-color: #047857;
+  cursor: pointer;
+}
+footer {
+  margin: 3rem 0 2rem 0;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+  margin: 0 1rem;
+}
+footer p {
+  color: gray;
+}
+
+</style>
+
+
 </head>
 <body>
 
